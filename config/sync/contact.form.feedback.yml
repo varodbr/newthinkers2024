@@ -1,0 +1,14 @@
+uuid: a14fe6ca-c3b1-4f6a-aeb0-0ea4a0cad1e4
+langcode: pt-br
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: vymHlgJy26BuI5GGj9-IXjwR3dRC5C0tij4BpWJnoqw
+id: feedback
+label: 'Entre em contato'
+recipients:
+  - vinicius.rodrigues@squadra.com.br
+reply: ''
+weight: 0
+message: 'Sua mensagem foi enviada.'
+redirect: ''

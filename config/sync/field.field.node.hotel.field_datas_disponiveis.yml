@@ -1,0 +1,21 @@
+uuid: a6dd45aa-8635-4004-bc19-3c1d518c9a9e
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_datas_disponiveis
+    - node.type.hotel
+  module:
+    - datetime
+id: node.hotel.field_datas_disponiveis
+field_name: field_datas_disponiveis
+entity_type: node
+bundle: hotel
+label: 'Datas disponíveis'
+description: 'Clique na seta para baixo para exibir o calendário de pop-up para seleção mais fácil de data.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

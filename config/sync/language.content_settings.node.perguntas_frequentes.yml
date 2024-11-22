@@ -1,0 +1,11 @@
+uuid: 88d3c9bc-777f-4cdb-9c03-1de6286cbb8a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - node.type.perguntas_frequentes
+id: node.perguntas_frequentes
+target_entity_type_id: node
+target_bundle: perguntas_frequentes
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,8 @@
+uuid: 177352c9-54d1-42a9-bbaf-0eda5bc157bb
+langcode: pt-br
+status: true
+dependencies: {  }
+id: juridico
+label: Jurídico
+description: ''
+locked: false

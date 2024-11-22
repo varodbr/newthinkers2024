@@ -1,0 +1,10 @@
+uuid: 79664d25-4c34-4f4b-8dc4-f68cf97e1dd8
+langcode: pt-br
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OjekiQuX9RbVQ2_8jOHBL94RgYLePqX7wpfNGgcQzrk
+id: html_year
+label: 'Ano HTML'
+locked: true
+pattern: 'Y'

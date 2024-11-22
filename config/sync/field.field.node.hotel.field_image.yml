@@ -1,0 +1,38 @@
+uuid: aad0ef29-3a6e-4b06-a9fb-fb55eb5a09ab
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_image
+    - node.type.hotel
+  module:
+    - image
+id: node.hotel.field_image
+field_name: field_image
+entity_type: node
+bundle: hotel
+label: 'Imagem do hotel'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:file'
+  handler_settings: {  }
+  file_directory: imagens/hotel
+  file_extensions: 'png gif jpg jpeg webp'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+field_type: image

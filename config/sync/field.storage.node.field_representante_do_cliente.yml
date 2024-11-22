@@ -1,0 +1,20 @@
+uuid: 9558adbc-258c-4c15-a191-c528be5737dc
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - node
+    - user
+id: node.field_representante_do_cliente
+field_name: field_representante_do_cliente
+entity_type: node
+type: entity_reference
+settings:
+  target_type: user
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

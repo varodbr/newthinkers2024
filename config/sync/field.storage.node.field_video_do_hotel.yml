@@ -1,0 +1,20 @@
+uuid: 0d4961e4-a828-4dbc-a2af-b08f13aea960
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - media
+    - node
+id: node.field_video_do_hotel
+field_name: field_video_do_hotel
+entity_type: node
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

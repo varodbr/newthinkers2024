@@ -1,0 +1,9 @@
+uuid: f59dbb54-9acd-4d05-8db7-5f402b66247d
+langcode: pt-br
+status: true
+dependencies: {  }
+id: gestor_de_conteudo
+label: 'Gestor de conteúdo'
+weight: 4
+is_admin: null
+permissions: {  }

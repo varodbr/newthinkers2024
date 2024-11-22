@@ -1,0 +1,38 @@
+uuid: 8a653349-2581-4dbe-ba33-823228c4527a
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.node.perguntas_frequentes.body
+    - field.field.node.perguntas_frequentes.field_representante_do_cliente
+    - node.type.perguntas_frequentes
+  module:
+    - text
+    - user
+id: node.perguntas_frequentes.default
+targetEntityType: node
+bundle: perguntas_frequentes
+mode: default
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_representante_do_cliente:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,51 @@
+uuid: 9c890cf4-a5e2-43da-9a14-86db42bdb985
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.hotel.body
+    - field.field.node.hotel.field_datas_disponiveis
+    - field.field.node.hotel.field_image
+    - field.field.node.hotel.field_ponto_de_referencia
+    - field.field.node.hotel.field_video_do_hotel
+    - image.style.medium
+    - node.type.hotel
+  module:
+    - image
+    - text
+    - user
+id: node.hotel.teaser
+targetEntityType: node
+bundle: hotel
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: medium
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: -1
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_datas_disponiveis: true
+  field_ponto_de_referencia: true
+  field_video_do_hotel: true
+  langcode: true

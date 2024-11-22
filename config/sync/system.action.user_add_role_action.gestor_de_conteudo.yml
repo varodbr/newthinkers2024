@@ -1,0 +1,14 @@
+uuid: 322a155d-ce2f-489f-b3bc-efdf50b01620
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - user.role.gestor_de_conteudo
+  module:
+    - user
+id: user_add_role_action.gestor_de_conteudo
+label: 'Adiciona o papel Gestor de conteúdo para o(s) usuário(s) selecionado(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: gestor_de_conteudo

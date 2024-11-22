@@ -1,0 +1,33 @@
+uuid: 9e309a95-57d5-490e-bcbc-2ee9240b473d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.perguntas_frequentes.body
+    - field.field.node.perguntas_frequentes.field_representante_do_cliente
+    - node.type.perguntas_frequentes
+  module:
+    - text
+    - user
+id: node.perguntas_frequentes.teaser
+targetEntityType: node
+bundle: perguntas_frequentes
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_representante_do_cliente: true
+  langcode: true

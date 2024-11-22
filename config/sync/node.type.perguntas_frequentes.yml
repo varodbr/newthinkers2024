@@ -1,0 +1,18 @@
+uuid: b100a0f0-8285-4572-8037-60ad79e27631
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Perguntas frequentes'
+type: perguntas_frequentes
+description: null
+help: null
+new_revision: true
+preview_mode: 1
+display_submitted: true
