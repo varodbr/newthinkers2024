@@ -8,12 +8,14 @@ dependencies:
     - field.field.node.hotel.field_image
     - field.field.node.hotel.field_ponto_de_referencia
     - field.field.node.hotel.field_video_do_hotel
+    - field.field.node.hotel.field_website_de_hotel
     - image.style.thumbnail
     - node.type.hotel
   module:
     - content_moderation
     - datetime
     - image
+    - link
     - media_library
     - path
     - text
@@ -64,6 +66,14 @@ content:
     region: content
     settings:
       media_types: {  }
+    third_party_settings: {  }
+  field_website_de_hotel:
+    type: link_default
+    weight: 101
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
     third_party_settings: {  }
   langcode:
     type: language_select

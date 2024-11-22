@@ -1,0 +1,8 @@
+uuid: 91abbcd3-6b3f-4847-b1ac-e8a9ff428b66
+langcode: pt-br
+status: true
+dependencies: {  }
+id: folheto
+label: Folheto
+revision: false
+description: 'Use esse modelo para carregar folhetos de hotel promocionais'

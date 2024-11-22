@@ -1,0 +1,21 @@
+uuid: e06d2d15-0fc7-4bcb-93ff-21c5d66a0bc9
+langcode: pt-br
+status: true
+dependencies: {  }
+name: escala_150_largura
+label: 'Escala 150 largura'
+effects:
+  200f41f5-1de1-4ad2-a3eb-a61eed7a5597:
+    uuid: 200f41f5-1de1-4ad2-a3eb-a61eed7a5597
+    id: image_scale
+    weight: -10
+    data:
+      width: 150
+      height: null
+      upscale: false
+  eec3208c-8851-41c4-8d3f-351084a7002f:
+    uuid: eec3208c-8851-41c4-8d3f-351084a7002f
+    id: image_convert
+    weight: -9
+    data:
+      extension: webp

@@ -1,0 +1,30 @@
+uuid: d9248778-8d54-4e7b-a59c-2789bf3079c7
+langcode: pt-br
+status: true
+dependencies:
+  content:
+    - 'block_content:folheto:1af1f46d-1b3c-4b69-8779-249e4af4d8e4'
+  module:
+    - block_content
+    - system
+  theme:
+    - olivero
+id: olivero_hotelespecialdrupal
+theme: olivero
+region: content
+weight: 0
+provider: null
+plugin: 'block_content:1af1f46d-1b3c-4b69-8779-249e4af4d8e4'
+settings:
+  id: 'block_content:1af1f46d-1b3c-4b69-8779-249e4af4d8e4'
+  label: 'Hotel especial Drupal'
+  label_display: visible
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /node/3

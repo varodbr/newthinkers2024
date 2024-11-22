@@ -1,0 +1,24 @@
+uuid: b0cbf9fa-81aa-4b84-9477-eee1774ec8ee
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - block_content.type.folheto
+    - field.storage.block_content.body
+  module:
+    - text
+id: block_content.folheto.body
+field_name: body
+entity_type: block_content
+bundle: folheto
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: false
+  required_summary: false
+  allowed_formats: {  }
+field_type: text_with_summary

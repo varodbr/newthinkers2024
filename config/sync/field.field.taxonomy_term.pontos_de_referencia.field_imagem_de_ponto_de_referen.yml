@@ -1,0 +1,29 @@
+uuid: e7d6bd03-63d2-4bf5-bcd2-f5141501eafc
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_imagem_de_ponto_de_referen
+    - media.type.image
+    - taxonomy.vocabulary.pontos_de_referencia
+id: taxonomy_term.pontos_de_referencia.field_imagem_de_ponto_de_referen
+field_name: field_imagem_de_ponto_de_referen
+entity_type: taxonomy_term
+bundle: pontos_de_referencia
+label: 'Imagem de ponto de referência'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      image: image
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference

@@ -1,0 +1,20 @@
+uuid: d537451a-29a1-4c66-adce-52111e3511b9
+langcode: pt-br
+status: true
+dependencies:
+  module:
+    - media
+    - taxonomy
+id: taxonomy_term.field_imagem_de_ponto_de_referen
+field_name: field_imagem_de_ponto_de_referen
+entity_type: taxonomy_term
+type: entity_reference
+settings:
+  target_type: media
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

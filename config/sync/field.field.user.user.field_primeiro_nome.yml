@@ -1,0 +1,20 @@
+uuid: 4de6d43a-4aec-4686-8435-b2570f15a5f5
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_primeiro_nome
+  module:
+    - user
+id: user.user.field_primeiro_nome
+field_name: field_primeiro_nome
+entity_type: user
+bundle: user
+label: 'Primeiro nome'
+description: 'Seu primeiro nome será usado somente quando você deixar comentários nos hotéis.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

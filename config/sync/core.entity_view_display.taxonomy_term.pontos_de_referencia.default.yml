@@ -1,0 +1,50 @@
+uuid: 9a28faa3-baf2-474c-a973-1410a75ce05d
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.pontos_de_referencia.field_imagem_de_ponto_de_referen
+    - field.field.taxonomy_term.pontos_de_referencia.field_website_oficial
+    - image.style.escala_150_largura
+    - taxonomy.vocabulary.pontos_de_referencia
+  module:
+    - link
+    - media
+    - text
+id: taxonomy_term.pontos_de_referencia.default
+targetEntityType: taxonomy_term
+bundle: pontos_de_referencia
+mode: default
+content:
+  description:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_imagem_de_ponto_de_referen:
+    type: media_thumbnail
+    label: above
+    settings:
+      image_link: ''
+      image_style: escala_150_largura
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_website_oficial:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  langcode: true

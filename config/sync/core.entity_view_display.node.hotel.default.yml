@@ -8,13 +8,163 @@ dependencies:
     - field.field.node.hotel.field_image
     - field.field.node.hotel.field_ponto_de_referencia
     - field.field.node.hotel.field_video_do_hotel
+    - field.field.node.hotel.field_website_de_hotel
     - image.style.wide
     - node.type.hotel
   module:
     - datetime
     - image
+    - layout_builder
+    - layout_discovery
+    - link
     - text
     - user
+third_party_settings:
+  layout_builder:
+    enabled: true
+    allow_custom: false
+    sections:
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Imagem banner'
+          context_mapping: {  }
+        components:
+          e6e3125e-8f8d-41e4-a9b2-997423547a49:
+            uuid: e6e3125e-8f8d-41e4-a9b2-997423547a49
+            region: content
+            configuration:
+              id: 'field_block:node:hotel:field_image'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: image
+                label: hidden
+                settings:
+                  image_link: ''
+                  image_style: wide
+                  image_loading:
+                    attribute: eager
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: 'Descrição Hotel'
+          context_mapping: {  }
+        components:
+          76aee8d5-56d3-44ed-9357-66f8403152a2:
+            uuid: 76aee8d5-56d3-44ed-9357-66f8403152a2
+            region: content
+            configuration:
+              id: 'field_block:node:hotel:body'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: text_default
+                label: hidden
+                settings: {  }
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: Video
+          context_mapping: {  }
+        components:
+          e655cb71-5757-46e2-926c-86a5fd6e95c6:
+            uuid: e655cb71-5757-46e2-926c-86a5fd6e95c6
+            region: content
+            configuration:
+              id: 'field_block:node:hotel:field_video_do_hotel'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_entity_view
+                label: above
+                settings:
+                  view_mode: default
+                  link: false
+                third_party_settings: {  }
+            weight: 0
+            additional: {  }
+        third_party_settings: {  }
+      -
+        layout_id: layout_onecol
+        layout_settings:
+          label: ''
+        components:
+          696a92b6-1ef4-452f-87c6-e9b045f2159c:
+            uuid: 696a92b6-1ef4-452f-87c6-e9b045f2159c
+            region: content
+            configuration:
+              id: 'extra_field_block:node:hotel:links'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+            weight: 3
+            additional: {  }
+          4943af0f-b514-4555-9973-b3d0a02a4532:
+            uuid: 4943af0f-b514-4555-9973-b3d0a02a4532
+            region: content
+            configuration:
+              id: 'field_block:node:hotel:field_website_de_hotel'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: link
+                label: above
+                settings:
+                  trim_length: 80
+                  url_only: false
+                  url_plain: false
+                  rel: ''
+                  target: ''
+                third_party_settings: {  }
+            weight: 4
+            additional: {  }
+          04337d3a-a2f1-4a7b-979c-be359eb123bd:
+            uuid: 04337d3a-a2f1-4a7b-979c-be359eb123bd
+            region: content
+            configuration:
+              id: 'field_block:node:hotel:field_datas_disponiveis'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: datetime_default
+                label: above
+                settings:
+                  timezone_override: ''
+                  format_type: medium
+                third_party_settings: {  }
+            weight: 1
+            additional: {  }
+          7693908c-0e47-404f-93dd-b30e24dac3b0:
+            uuid: 7693908c-0e47-404f-93dd-b30e24dac3b0
+            region: content
+            configuration:
+              id: 'field_block:node:hotel:field_ponto_de_referencia'
+              label_display: '0'
+              context_mapping:
+                entity: layout_builder.entity
+              formatter:
+                type: entity_reference_label
+                label: above
+                settings:
+                  link: true
+                third_party_settings: {  }
+            weight: 2
+            additional: {  }
+        third_party_settings: {  }
 id: node.hotel.default
 targetEntityType: node
 bundle: hotel
@@ -63,6 +213,18 @@ content:
       link: false
     third_party_settings: {  }
     weight: 104
+    region: content
+  field_website_de_hotel:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 105
     region: content
   links:
     settings: {  }

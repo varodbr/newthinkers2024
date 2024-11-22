@@ -1,0 +1,23 @@
+uuid: abe7ab7f-9deb-45af-beb3-b1a09f8e2716
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_website_de_hotel
+    - node.type.hotel
+  module:
+    - link
+id: node.hotel.field_website_de_hotel
+field_name: field_website_de_hotel
+entity_type: node
+bundle: hotel
+label: 'Website de Hotel'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  title: 1
+  link_type: 16
+field_type: link

@@ -433,7 +433,7 @@ display:
             operator_id: field_ponto_de_referencia_target_id_op
             label: 'Filtrar Hotéis por Ponto de referência de Londres'
             description: ''
-            use_operator: true
+            use_operator: false
             operator: field_ponto_de_referencia_target_id_op
             operator_limit_selection: false
             operator_list: {  }

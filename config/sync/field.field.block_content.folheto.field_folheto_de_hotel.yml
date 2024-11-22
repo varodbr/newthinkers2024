@@ -1,0 +1,29 @@
+uuid: d3f60795-49d7-4733-b939-5e0faae9b877
+langcode: pt-br
+status: true
+dependencies:
+  config:
+    - block_content.type.folheto
+    - field.storage.block_content.field_folheto_de_hotel
+    - media.type.document
+id: block_content.folheto.field_folheto_de_hotel
+field_name: field_folheto_de_hotel
+entity_type: block_content
+bundle: folheto
+label: 'Folheto de Hotel'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      document: document
+    sort:
+      field: _none
+      direction: ASC
+    auto_create: true
+    auto_create_bundle: ''
+field_type: entity_reference
